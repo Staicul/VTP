@@ -34,7 +34,11 @@ For runs with Zalenium:  <br>
 browser = chrome/firefox
 selenium_grid_url = http://localhost:4444/wd/hub
 ```
----
+Command I run with:<br>
+```
+mvn -DconfigFile=local -DtestSuite=ViatorSuite -Dwebdriver.driver=chrome verify -Dwebdriver.remote.url=http://localhost:4444/wd/hub
+```
+
 
 Run command for Serenity report generation <br>
 
