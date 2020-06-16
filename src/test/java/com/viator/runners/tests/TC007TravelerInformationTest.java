@@ -73,7 +73,7 @@ public class TC007TravelerInformationTest {
             Assert.assertEquals("There are still error messages", 0, checkoutSteps.getErrorMessages().size());
             Assert.assertEquals("PayPal window is not open", windowTitle, paymentSteps.getNewlyOpenedWindowTitle());
         } else {
-            Assert.assertEquals("", 1, checkoutSteps.getErrorMessages().size());
+            Assert.assertEquals("Was expecting 1 error message", 1, checkoutSteps.getErrorMessages().size());
             Assert.assertEquals("Incorrect error message", expectedErrorMessage, checkoutSteps.getErrorMessages().get(0));
         }
     }
