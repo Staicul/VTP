@@ -1,0 +1,3 @@
+EMAIL,PASSWORD,EXPECTEDSUCCESSMESSAGE,EXPECTEDERRORMESSAGE
+"ipresence@mailinator.com","passw0rd","Signed in as",""
+"ipresence@mailinator.com","password","","The email or password you entered isn't correct. If you've forgotten your password, please reset it.  Click here"

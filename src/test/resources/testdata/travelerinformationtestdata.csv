@@ -1,0 +1,10 @@
+FIRST NAME,LAST NAME, EMAIL, PHONE, EXPECTED ERROR MESSAGE,WINDOW TITLE
+"","Armando","ipresence@mailinator.com","078888888","Traveler first name is required.",""
+"123","Armando","ipresence@mailinator.com","078888888","Traveler first name is invalid.",""
+"Jose","","ipresence@mailinator.com","078888888","Traveler last name is required.",""
+"Jose","123","ipresence@mailinator.com","078888888","Traveler last name is invalid.",""
+"Jose","Armando","","078888888","Email address is required.",""
+"Jose","Armando","ipresence","078888888","The email address you have entered is not valid. Please re-enter your email address.",""
+"Jose","Armando","ipresence@mailinator.com","","Phone number is required.",""
+"Jose","Armando","ipresence@mailinator.com","213","Phone number is invalid.",""
+"Jose","Armando","ipresence@mailinator.com","078888888","","Log in to your PayPal account"

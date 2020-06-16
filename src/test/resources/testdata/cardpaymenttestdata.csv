@@ -1,0 +1,3 @@
+CARDHOLDER,CARDNUMBER,EXPIRATIONMONTH,EXPIRATIONYEAR,SECURITYCODE,EXPECTED ERROR MESSAGE
+"Jose Armando","4716622386303505","12","2021","000","There was a problem with this credit card. Please re-enter the details below or try a different card."
+"Jose Armando","4716622386303505","12","2021","000",""
