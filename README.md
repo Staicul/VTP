@@ -29,9 +29,11 @@ mvn -DconfigFile=local -DtestSuite=ViatorSuite -Dwebdriver.driver=${browser} ver
 ```
 Notes:  <br>
 
-For runs with Zalenium:
+For runs with Zalenium:  <br>
+```
 browser = chrome/firefox
 selenium_grid_url = http://localhost:4444/wd/hub
+```
 ---
 
 Run command for Serenity report generation <br>
@@ -44,15 +46,15 @@ Notes: Will generate a test report that can be accessed under the path ```/targe
 
 ## 3. Selenium UI Tests - JUnit (short description)
 
-The framework contains two types of jUnit tests: straight up jUnit test and data driven tests. The Data Driven tests use .csv files (located in ```src/test/resources/testdata``` )
-Tests rely on the ```BASE_URL``` variable to be set in the config file in order to point to the correct application.
-Test object mappings from web pages are captured in ```Page``` classes that define the object locator and the action related to it (click, input, select and so on). The ```Step``` classes will define groups of actions (performLogin - input user, input password, click login) Step method annotations have the role to create report entries for each method. The tests will never call page classes directly, thus it will always rely on steps to perform actions. 
+The framework contains two types of jUnit tests: straight up jUnit tests and data driven tests. The Data Driven tests use .csv files (located in ```src/test/resources/testdata``` ).<br>
+Tests rely on the ```BASE_URL``` variable to be set in the config file in order to point to the correct application.<br>
+Test object mappings from web pages are captured in ```Page``` classes that define the object locator and the action related to it (click, input, select and so on). The ```Step``` classes will define groups of actions (e.g.: logInWithCredentials - input user, input password, click login). Step method annotations have the role to create report entries for each method. The tests will never call page classes directly, thus it will always rely on steps to perform actions. 
 
 
 ## 3.1 Zalenium Grid 
 
 
-It was required for the test to be run on Selenium Grid.
+It was required for the tests to be run on Selenium Grid.
 I used the Zalenium docker images to provision the infrastructure.
 
 Documentation: https://opensource.zalando.com/zalenium/
