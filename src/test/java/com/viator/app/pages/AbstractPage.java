@@ -9,10 +9,17 @@ import java.util.Set;
 
 public abstract class AbstractPage extends PageObject {
 
-    protected void waitUntilVisibleThenClick(WebElement element) {
+    public void waitUntilVisibleThenClick(WebElement element) {
         element(element).waitUntilVisible();
         element.click();
     }
+
+    public void waitUntilVisibleThenClickWithJs(WebElement element) {
+        element(element).waitUntilVisible();
+//        element.click();
+        ((JavascriptExecutor) getDriver()).executeScript("arguments[0].click();", element);
+    }
+
 
     protected void scrollElementIntoView(WebElement element) {
         evaluateJavascript("arguments[0].scrollIntoView(true);", element);
